@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #F4F7FB;
+    color: #1E293B;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-white bg-[#2563EB] hover:bg-[#1D4ED8] transition-all duration-200 shadow-sm hover:shadow disabled:opacity-60 disabled:cursor-not-allowed;
+  }
+  .btn-purple {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-white bg-[#6D4AFF] hover:bg-[#5B3AE0] transition-all duration-200 shadow-sm hover:shadow disabled:opacity-60 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-[#1E293B] bg-white border border-slate-200 hover:bg-slate-50 transition-all duration-200 shadow-sm disabled:opacity-60 disabled:cursor-not-allowed;
+  }
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-semibold text-white bg-[#EF4444] hover:bg-red-600 transition-all duration-200 shadow-sm disabled:opacity-60;
+  }
+  .card-surface {
+    @apply bg-white rounded-2xl border border-slate-200/80 shadow-card;
+  }
+  .input-field {
+    @apply w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-[#1E293B] placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] transition-all duration-150;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background-color: #FFFFFF !important;
+  }
+}

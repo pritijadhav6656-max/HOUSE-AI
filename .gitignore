@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Python virtual environments and cache
+ml-model/venv/
+ml-model/venv311/
+ml-model/.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+frontend/.env
+backend/.env
+ml-model/.env
+
+# Build outputs
+dist/
+build/
+frontend/dist/
+backend/.mongodb-data/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Additional Python files
+.venv/
+venv/
+*.egg-info/
+
+# Testing and coverage
+.coverage
+htmlcov/
+coverage/
+
+# Temporary files
+*.tmp
+*.bak
